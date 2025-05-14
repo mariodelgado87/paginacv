@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FICHA CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            font-size: 36px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        p::selection {
+            color: red;
+            background-color: yellow;
+        }
+
+        .comp {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .foo {
+            font-style: italic;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a[href$=".pdf"] {
+            color: red;
+        }
+
+        a::before {
+            content: "Enlace: ";
+            font-weight: bold;
+        }
+
+        ol li {
+            color: blue;
+        }
+
+        .table-title {
+            text-align: center;
+            font-weight: bold;
+            border: 3px solid blue;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+
+        form {
+            border: 2px solid #007bff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select, button {
+            margin: 5px;
+        }
+
+        button {
+            font-size: 16px;
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FICHA CV CURRICULUM VITAE</h1>
+
+    <p class="comp">DELGADO JIMENEZ MARIO SAUL</p>
+
+    <p class="foo">
+        Soy un estudiante de Ingeniería de Sistemas en la Universidad Nacional del Altiplano, Puno.
+        Llevo cursos de programación, matemática, física, inglés, entre otros.
+        He participado en proyectos y desarrollo de aplicaciones, utilizando diversas herramientas y conocimientos.
+        Me enfoco en resolver problemas complejos con soluciones tecnológicas, buscando siempre nuevas oportunidades de aprendizaje.
+    </p>
+
+    <div class="img-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQTSPOu1b8_2p4qfMVTjsLdmQxaQihSv7Xwg&s" height="200" width="200" alt="Foto 1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Logo_UNAP.png" height="200" width="200" alt="Logo UNAP">
+    </div>
+
+    <div class="text-center mb-3">
+        <a href="https://www.portal.unap.edu.pe/">Pagina UNA Puno</a><br>
+        <a href="https://transparencia.unap.edu.pe/web/wp-content/uploads/2023/12/PLAN-DE-ESTUDIOS-INGENIERIA-DE-SISTEMAS.pdf">Plan de estudios</a>
+    </div>
+
+    <p><strong>Algunos proyectos desarrollados:</strong></p>
+    <ol>
+        <li>Sistema sencillo de gestión bancaria</li>
+        <li>Calculadora de IMC</li>
+        <li>Generador de tablas y gráficos estadísticos</li>
+        <li>Sistema de biblioteca CRUD</li>
+    </ol>
+    <ul>
+        <li>Juego Snake en consola</li>
+        <li>Clon de Bomberman</li>
+    </ul>
+
+    <div class="table-title">DATOS PERSONALES</div>
+    <table>
+        <tr><td>Apellidos:</td><td>DELGADO JIMENEZ</td></tr>
+        <tr><td>Nombres:</td><td>MARIO SAUL</td></tr>
+        <tr><td>Género:</td><td>MASCULINO</td></tr>
+        <tr><td>Nacionalidad:</td><td>PERÚ</td></tr>
+    </table>
+
+    <div class="table-title">IDIOMAS</div>
+    <table>
+        <tr>
+            <th>Idioma</th><th>Lectura</th><th>Conversación</th><th>Escritura</th><th>Forma de aprendizaje</th><th>Lengua Materna</th>
+        </tr>
+        <tr>
+            <td>INGLÉS</td><td>BÁSICO</td><td>BÁSICO</td><td>BÁSICO</td><td>Estudio</td><td>NO</td>
+        </tr>
+        <tr>
+            <td>QUECHUA</td><td>BÁSICO</td><td>BÁSICO</td><td>BÁSICO</td><td>Otros</td><td>NO</td>
+        </tr>
+        <tr>
+            <td>ESPAÑOL</td><td>AVANZADO</td><td>AVANZADO</td><td>AVANZADO</td><td>Otros</td><td>SÍ</td>
+        </tr>
+    </table>
+
+    <div class="table-title">Deje su información para comunicarnos:</div>
+    <form>
+        <div>
+            <input name="name" type="text" placeholder="Nombre">
+            <input name="password" type="password" placeholder="DNI">
+        </div>
+        <div>
+            Grado académico:
+            <input type="radio" name="grado" value="estudiante"> Estudiante
+            <input type="radio" name="grado" value="profesional"> Profesional
+            <input type="radio" name="grado" value="tecnico"> Técnico
+            <input type="radio" name="grado" value="otro"> Otro
+        </div>
+        <div>
+            <input name="country" list="countries" placeholder="País">
+            <datalist id="countries">
+                <option value="Perú">
+                <option value="Argentina">
+                <option value="Brasil">
+                <option value="Ecuador">
+                <option value="Colombia">
+                <option value="USA">
+                <option value="Rusia">
+                <option value="Otro">
+            </datalist>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
